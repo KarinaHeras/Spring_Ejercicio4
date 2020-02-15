@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+    <bean id="listColegio" class="com.grupoatrium.modelo.Colegio">
+        <property name="alumnos">
+            <list>
+                <value>Juan</value>
+                <value>Pedro</value>
+                <value>Maria</value>
+                <value>Manuel</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="setColegio" class="com.grupoatrium.modelo.Colegio">
+        <property name="alumnos">
+            <set>
+                <value>Juan</value>
+                <value>Pedro</value>
+                <value>Maria</value>
+                <value>Manuel</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="mapColegio" class="com.grupoatrium.modelo.Colegio">
+        <property name="alumnos2">
+            <map>
+                <entry key="1" value="Juan" />
+                <entry key="2" value="Pedro" />
+                <entry key="3" value="Maria" />
+                <entry key="4" value="Manuel" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="propertiesColegio" class="com.grupoatrium.modelo.Colegio">
+        <property name="alumnos2">
+            <props>
+                <prop key="alumno1">Juan</prop>
+                <prop key="alumno2">Pedro</prop>
+                <prop key="alumno3">Maria</prop>
+                <prop key="alumno4">Manuel</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
